@@ -336,9 +336,9 @@ function M.hook_add(prefix, mode, buf, secret_only)
     return
   end
   -- don't hook to j or k in INSERT mode
-  if mode == "i" and (prefix == "j" or prefix == "k") then
-    return
-  end
+--   if mode == "i" and (prefix == "j" or prefix == "k") then
+--     return
+--   end
   -- never hook q
   if mode == "n" and prefix == "q" then
     return
